@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @bread %>
+
+<div>
+  <%= link_to "Edit this bread", edit_bread_path(@bread) %> |
+  <%= link_to "Back to breads", breads_path %>
+
+  <%= button_to "Destroy this bread", @bread, method: :delete %>
+</div>

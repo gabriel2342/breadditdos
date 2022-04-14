@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+<%= render "navbar"%>
+<h1>Breads</h1>
+
+<div id="breads">
+  <% @breads.each do |bread| %>
+    <%= render bread %>
+    <p>
+      <%= link_to "Show this bread", bread %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New bread", new_bread_path %>
